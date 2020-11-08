@@ -7,7 +7,7 @@ modelview: modelview.c modelview.h lists.o
 	gcc -c modelview.c -o modelview.o -g 
 
 lists: lists.c lists.h 
-	gcc lists.c -o lists.o -g -lglfw -lOpenGL
+	gcc lists.c -o lists.o -g 
 
 loadstuff: loadstuff.c loadstuff.h
 	gcc loadstuff.c -o loadstuff.o -lglfw -lOpenGL -lGLEW -lgl-matrix -g 
