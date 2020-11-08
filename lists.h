@@ -1,8 +1,6 @@
 #ifndef LISTS_H
 #define LISTS_H 
 
-#include <GLFW/glfw3.h>
-
 typedef struct float_list_struct * float_list; 
 typedef struct int_list_struct * int_list;
 typedef struct double_list_struct * double_list; 
