@@ -52,7 +52,7 @@ void double_list_init (double_list list, unsigned int initsize)
 }
 
 
-void float_list_add (float_list list, float point)
+inline void float_list_add (float_list list, float point)
 {
 	if(list->filled == list->size){
 		list->points = realloc(list->points, 
@@ -64,7 +64,7 @@ void float_list_add (float_list list, float point)
 	list->filled++;
 }
 
-void double_list_add (double_list list, double point)
+inline void double_list_add (double_list list, double point)
 { 
 	
 	if(list->filled == list->size){
@@ -124,7 +124,7 @@ void int_list_init (int_list list, unsigned int initsize)
 	list->points = malloc(initsize * sizeof(int)); 
 } 
 
-void int_list_add (int_list list, unsigned int point)
+inline void int_list_add (int_list list, unsigned int point)
 {
 	if(list->filled == list->size){
 		list->points = realloc(list->points, sizeof(int) * (list->size + 100));
